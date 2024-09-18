@@ -3,6 +3,7 @@ import 'package:kharidari/common/widget/const_text_field.dart';
 import '../../../components/custom_surfix_icon.dart';
 import '../../../components/form_error.dart';
 import '../../../constants.dart';
+import '../../../style/color.dart';
 import '../../complete_profile/complete_profile_screen.dart';
 
 class SignUpForm extends StatefulWidget {
@@ -65,6 +66,7 @@ class _SignUpFormState extends State<SignUpForm> {
             },
             decoration: InputDecoration(
               focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: AppColors.primary, width: 1.8),
                 borderRadius: BorderRadius.circular(16),
               ),
               enabledBorder: OutlineInputBorder(
@@ -76,7 +78,7 @@ class _SignUpFormState extends State<SignUpForm> {
               suffixIcon: const CustomSurffixIcon(
                   svgIcon: "assets/icons/Mail.svg"),
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(1.0), // Adjust the radius as needed
+                borderRadius: BorderRadius.circular(16), // Adjust the radius as needed
               ),
             ),
           ),
@@ -104,6 +106,7 @@ class _SignUpFormState extends State<SignUpForm> {
             },
             decoration:  InputDecoration(
               focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: AppColors.primary, width: 1.8),
                 borderRadius: BorderRadius.circular(16),
               ),
               enabledBorder: OutlineInputBorder(
@@ -114,7 +117,10 @@ class _SignUpFormState extends State<SignUpForm> {
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+              suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg",),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16), // Adjust the radius as needed
+              ),
             ),
           ),
           const SizedBox(height: 20),
@@ -141,6 +147,7 @@ class _SignUpFormState extends State<SignUpForm> {
             },
             decoration: InputDecoration(
               focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: AppColors.primary, width: 1.8),
                 borderRadius: BorderRadius.circular(16),
               ),
               enabledBorder: OutlineInputBorder(
@@ -152,6 +159,9 @@ class _SignUpFormState extends State<SignUpForm> {
               // if you r using flutter less then 1.20.* then maybe this is not working properly
               floatingLabelBehavior: FloatingLabelBehavior.always,
               suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16), // Adjust the radius as needed
+              ),
             ),
           ),
           FormError(errors: errors),

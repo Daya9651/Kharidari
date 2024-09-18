@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:kharidari/style/color.dart';
 import '../../../components/custom_surfix_icon.dart';
 import '../../../constants.dart';
 import '../../../helper/keyboard.dart';
@@ -54,6 +55,7 @@ class _SignFormState extends State<SignForm> {
             },
             decoration:  InputDecoration(
               focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: AppColors.primary, width: 1.8),
                 borderRadius: BorderRadius.circular(16),
               ),
               enabledBorder: OutlineInputBorder(
@@ -62,6 +64,9 @@ class _SignFormState extends State<SignForm> {
               hintText: "Enter your email",
               floatingLabelBehavior: FloatingLabelBehavior.always,
               suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16), // Adjust the radius as needed
+              ),
             ),
           ),
           const SizedBox(height: 5),
@@ -87,6 +92,7 @@ class _SignFormState extends State<SignForm> {
             },
             decoration: InputDecoration(
               focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: AppColors.primary, width: 1.8),
                 borderRadius: BorderRadius.circular(16),
               ),
               enabledBorder: OutlineInputBorder(
@@ -96,6 +102,9 @@ class _SignFormState extends State<SignForm> {
               // hintStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               floatingLabelBehavior: FloatingLabelBehavior.always,
               suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16), // Adjust the radius as needed
+              ),
             ),
           ),
           const SizedBox(height: 2),
