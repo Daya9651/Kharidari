@@ -64,6 +64,9 @@ class _SignUpFormState extends State<SignUpForm> {
               return null;
             },
             decoration: InputDecoration(
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
@@ -100,6 +103,9 @@ class _SignUpFormState extends State<SignUpForm> {
               return null;
             },
             decoration:  InputDecoration(
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
@@ -134,6 +140,9 @@ class _SignUpFormState extends State<SignUpForm> {
               return null;
             },
             decoration: InputDecoration(
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
