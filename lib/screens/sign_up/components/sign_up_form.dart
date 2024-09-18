@@ -64,10 +64,13 @@ class _SignUpFormState extends State<SignUpForm> {
               return null;
             },
             decoration: InputDecoration(
-              labelText: "Email",
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              // labelText: "Email",
               hintText: "Enter your email",
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(
+              suffixIcon: const CustomSurffixIcon(
                   svgIcon: "assets/icons/Mail.svg"),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(1.0), // Adjust the radius as needed
@@ -96,13 +99,16 @@ class _SignUpFormState extends State<SignUpForm> {
               }
               return null;
             },
-            decoration: const InputDecoration(
-              labelText: "Password",
+            decoration:  InputDecoration(
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              // labelText: "Password",
               hintText: "Enter your password",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+              suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
             ),
           ),
           const SizedBox(height: 20),
@@ -127,13 +133,16 @@ class _SignUpFormState extends State<SignUpForm> {
               }
               return null;
             },
-            decoration: const InputDecoration(
-              labelText: "Confirm Password",
+            decoration: InputDecoration(
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              // labelText: "Confirm Password",
               hintText: "Re-enter your password",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+              suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
             ),
           ),
           FormError(errors: errors),
